@@ -1,0 +1,51 @@
+# Build settings
+permalink   : /blog/:year/:title/
+markdown    : kramdown
+#highlighter : pygments
+
+paginate: 3
+paginate_path: "/blog/page/:num/"
+comments: false
+
+destination: _site
+sass:
+  sass_dir: _scss
+  style: compressed # expanded
+
+# SEO settings
+title: Alexey Shcherbakov
+description: "Alexey Shcherbakov personal page"
+keywords: "aJIeks, ruby, coding, resume"
+url: http://ajieks.ru
+baseurl: ""
+
+# google_analytics: UA-52446115-1
+repo: http://github.com/ajieks/ajieks.github.io
+#disqus_shortname: "fernandomoreira"
+#disqus_site_shortname: "fernandomoreira"
+
+# Author settings
+author:
+  name      : Alexey Shcherbakov
+  job       : Backend Engineer
+  bio       : "Backend developer on Ruby"
+  thumb     : /images/author.jpg
+  email     : schalexey+hp@gmail.com
+  url       : http://ajieks.ru
+  github    : http://github.com/fuCtor
+  twitter   : http://twitter.com/ajieks
+#  facebook  : http://facebook.com/fernando.dev
+#  linkedin  : http://linkedin.com/in/schalexey
+
+# navbar pages
+navbar:
+  - slug: about
+    title: About
+  # - slug: resume
+  #   title: Resume
+  # - slug: skills
+  #   title: Skills
+  - slug: blog
+    title: Blog
+
+exclude: ["nginx.conf", "gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
