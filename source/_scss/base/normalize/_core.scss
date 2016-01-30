@@ -44,8 +44,8 @@
 // base
 //////////////////////////////////////////////////////////////
 
-@import "base/html";
-@import "base/margin";
+@import "base/_html";
+@import "base/_margin";
 
 
 // html5
@@ -61,10 +61,10 @@
 
 }
 
-@import "html5/block";
-@import "html5/inline-block";
-@import "html5/audio";
-@import "html5/hidden";
+@import "html5/_block";
+@import "html5/_inline-block";
+@import "html5/_audio";
+@import "html5/_hidden";
 
 
 // links
@@ -78,8 +78,8 @@
 
 }
 
-@import "links/background";
-@import "links/outline";
+@import "links/_background";
+@import "links/_outline";
 
 
 // text level semantics
@@ -98,15 +98,15 @@
 
 }
 
-@import "text-level/abbr";
-@import "text-level/bold";
-@import "text-level/dfn";
-@import "text-level/headers";
-@import "text-level/mark";
-@import "text-level/p";
-@import "text-level/q";
-@import "text-level/small";
-@import "text-level/sub-sup";
+@import "text-level/_abbr";
+@import "text-level/_bold";
+@import "text-level/_dfn";
+@import "text-level/_headers";
+@import "text-level/_mark";
+@import "text-level/_p";
+@import "text-level/_q";
+@import "text-level/_small";
+@import "text-level/_sub-sup";
 
 
 // Lists
@@ -119,9 +119,9 @@
 
 }
 
-@import "lists/margin";
-@import "lists/padding";
-@import "lists/list-style";
+@import "lists/_margin";
+@import "lists/_padding";
+@import "lists/_list-style";
 
 // text level embedded content
 //////////////////////////////////////////////////////////////
@@ -134,8 +134,8 @@
 
 }
 
-@import "embedded-content/img";
-@import "embedded-content/svg";
+@import "embedded-content/_img";
+@import "embedded-content/_svg";
 
 
 // normalize.scss grouping content
@@ -151,10 +151,10 @@
 
 }
 
-@import "grouping-content/figure";
-@import "grouping-content/hr";
-@import "grouping-content/pre";
-@import "grouping-content/monospace";
+@import "grouping-content/_figure";
+@import "grouping-content/_hr";
+@import "grouping-content/_pre";
+@import "grouping-content/_monospace";
 
 
 // normalize.scss forms
@@ -187,21 +187,21 @@
 
 }
 
-@import "forms/form";
-@import "forms/form-elements-reset";
-@import "forms/button-overflow";
-@import "forms/button-select-text-transform";
-@import "forms/button-appearance";
-@import "forms/button-input-disabled";
-@import "forms/button-input-focus-inner";
-@import "forms/input-line-height";
-@import "forms/input-checkbox-radio";
-@import "forms/input-number";
-@import "forms/input-search";
-@import "forms/fieldset";
-@import "forms/legend";
-@import "forms/textarea";
-@import "forms/optgroup";
+@import "forms/_form";
+@import "forms/_form-elements-reset";
+@import "forms/_button-overflow";
+@import "forms/_button-select-text-transform";
+@import "forms/_button-appearance";
+@import "forms/_button-input-disabled";
+@import "forms/_button-input-focus-inner";
+@import "forms/_input-line-height";
+@import "forms/_input-checkbox-radio";
+@import "forms/_input-number";
+@import "forms/_input-search";
+@import "forms/_fieldset";
+@import "forms/_legend";
+@import "forms/_textarea";
+@import "forms/_optgroup";
 
 
 // normalize.scss tables
@@ -215,5 +215,5 @@
 
 }
 
-@import "tables/table";
-@import "tables/td-th";
+@import "tables/_table";
+@import "tables/_td-th";

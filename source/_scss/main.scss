@@ -4,13 +4,13 @@
  * MIT License
  */
 
-@import "bourbon/bourbon";
-@import "neat/neat";
+@import "bourbon/_bourbon";
+@import "neat/_neat";
 
 @import "variables";
 
-@import "base/reset";
-@import "base/base";
+@import "base/_reset";
+@import "base/_base";
 @import "grid-settings";
 @import "layout";
 @import "icons";
