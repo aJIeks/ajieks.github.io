@@ -1,0 +1,283 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(https://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body, html {
+  height: 100%;
+  font-family: 'PT Sans', sans-serif, Tahoma; }
+
+a {
+  color: #000000; }
+
+.container {
+  display: flex;
+  height: 100%; }
+
+.column {
+  flex: 0 0 20%;
+  height: 100%;
+  z-index: 10; }
+  .column .content-wrapper {
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+
+@media screen and (min-width: 1800px) {
+  .column .content-wrapper {
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: stretch; } }
+@media screen and (max-width: 900px) {
+  .column {
+    flex: 0 0 70%; } }
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 0 0 100%; } }
+.map {
+  min-width: 100px;
+  min-height: 100px;
+  width: 80%;
+  height: 100%;
+  position: fixed;
+  left: 20%;
+  top: 0px;
+  bottom: 0px; }
+  .map .leaflet-top {
+    top: 50px !important; }
+  .map .leaflet-marker-icon:hover {
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.3) inset; }
+  .map .leaflet-marker-icon {
+    border-radius: 100em; }
+  .map.with-header {
+    margin-top: 20px; }
+
+@media screen and (max-width: 900px) {
+  .map {
+    width: 30%;
+    left: 70%; } }
+@media screen and (max-width: 600px) {
+  .map {
+    display: none; } }
+#player {
+  margin-top: 50px;
+  position: relative; }
+  #player header {
+    position: absolute;
+    height: 24px;
+    width: 100%;
+    z-index: 10; }
+
+#paneHeader {
+  background: #FFF none repeat scroll 0% 0%;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+  left: 0px;
+  position: fixed;
+  top: 0px;
+  width: 20%;
+  z-index: 100;
+  display: flex; }
+
+#header {
+  margin-left: 20px; }
+
+a.header-logo {
+  height: 50px;
+  display: block; }
+  a.header-logo svg {
+    width: 50px; }
+
+#navigation {
+  margin: 0;
+  flex-grow: 1;
+  flex-shrink: 0;
+  display: flex; }
+  #navigation .actions {
+    margin: 0px -10px; }
+  #navigation .actions li {
+    margin: 0px; }
+
+.actions > li {
+  display: inline-block;
+  font-size: 13px;
+  margin: 0px 5px;
+  vertical-align: middle; }
+
+.custom-menu a {
+  font-size: 0.9em; }
+
+.nav-item, .info-block {
+  display: block;
+  line-height: 50px !important;
+  padding: 0px 10px;
+  transition: background 0.1s ease 0s; }
+  .nav-item a, .info-block a {
+    text-decoration: none; }
+
+.nav-item:hover {
+  box-shadow: inset 0 -2px 0 0 #c03;
+  color: #c03; }
+
+.media-wrapper {
+  display: flex;
+  justify-content: center;
+  opacity: 1; }
+  .media-wrapper.active {
+    border-left: 3px solid #ff8e00; }
+
+.media-wrapper.old-media.ng-enter {
+  -webkit-transition: 1s;
+  transition: 1s;
+  margin-top: 0px;
+  margin-left: 0px;
+  opacity: 0; }
+
+.media-wrapper.old-media.ng-enter-active {
+  margin-top: 0px;
+  margin-left: 0px;
+  opacity: 1; }
+
+@media screen and (max-width: 1800px) {
+  .media-wrapper.ng-enter {
+    -webkit-transition: 1s;
+    transition: 1s;
+    margin-top: -80%;
+    opacity: 1; }
+
+  .media-wrapper.ng-enter-active {
+    margin-top: 0px;
+    opacity: 1; } }
+@media screen and (min-width: 1800px) {
+  .media-wrapper.ng-enter {
+    -webkit-transition: 1s;
+    transition: 1s;
+    margin-top: 0px;
+    margin-left: 0px;
+    opacity: 0; }
+
+  .media-wrapper.ng-enter-active {
+    margin-top: 0px;
+    margin-left: 0px;
+    opacity: 1; } }
+.media {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 5px 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #dcdcdc; }
+
+@media screen and (max-width: 400px) {
+  .media {
+    width: 350px; }
+    .media .media-photo {
+      width: 348px;
+      min-height: 348px; } }
+@media screen and (max-width: 350px) {
+  .media {
+    width: 300px; }
+    .media .media-photo {
+      width: 298px;
+      min-height: 298px; } }
+.media-user {
+  display: flex;
+  align-items: center;
+  border-bottom: 0px;
+  padding: 10px;
+  background: white; }
+
+.media-user_avatar, .media-user_control {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  flex-shrink: 0; }
+
+.media-user_name {
+  vertical-align: baseline;
+  flex-grow: 1;
+  flex-shrink: 1; }
+
+.media-user_ago {
+  vertical-align: baseline;
+  flex-shrink: 0;
+  color: #a5a7aa;
+  font-size: 13px;
+  font-weight: 400; }
+
+.media-info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  background: white;
+  font-size: 0.7em; }
+  .media-info span {
+    display: inline-block;
+    margin-right: 20px; }
+
+.media-info_tag {
+  display: block;
+  padding-right: 1em; }
+  .media-info_tag a {
+    color: #a5a7aa;
+    text-decoration: none; }
+    .media-info_tag a:before {
+      content: '#'; }
+
+.control-play {
+  display: none; }
+
+.media:hover .control-play {
+  display: block; }
+
+.control-play svg, .control-stop svg {
+  height: 28px; }
+
+/*# sourceMappingURL=style.css.map */
