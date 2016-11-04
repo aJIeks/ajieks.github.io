@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "JRuby + Ratpack"
-date:   2016-10-20 00:00:00
+date:   2016-11-04 00:00:00
 comments: false
 categories: jekyll update
 tags:
