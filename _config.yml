@@ -15,7 +15,7 @@ sass:
 # SEO settings
 title: Alexey Shcherbakov
 description: "Alexey Shcherbakov personal page"
-keywords: "aJIeks, ruby, coding, resume"
+keywords: "aJIeks, ruby, scala, coding, resume"
 url: http://ajieks.ru
 baseurl: ""
 
@@ -28,7 +28,7 @@ repo: http://github.com/ajieks/ajieks.github.io
 author:
   name      : Alexey Shcherbakov
   job       : Backend Engineer
-  bio       : "Backend developer on Ruby"
+  bio       : "Backend developer on Scala"
   thumb     : /img/author.jpg
   email     : schalexey+hp@gmail.com
   url       : http://ajieks.ru
